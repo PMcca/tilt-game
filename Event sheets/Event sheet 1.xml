@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="4249330646201659">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3105042163247088" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">redBut</param>
+                </condition>
+                <condition id="2" name="Mouse button is down" sid="8420529763928063" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="5561806193647869" type="redTilt">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7530976325874259">
+            <conditions>
+                <condition id="3" name="On button released" sid="9274792507861364" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="2029904844156016" type="redTilt">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4233823930803383">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2734780912570971" type="wall">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="0" name="Apply force" sid="2101878836227809" type="Sprite2">
+                    <param id="0" name="Force X">100</param>
+                    <param id="1" name="Force Y">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
